@@ -1,0 +1,64 @@
+body {
+    background-color: #f4f4f9;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Pushes logo and links apart */
+    align-items: center;       /* Vertically centers items */
+    padding: 0 50px;           /* Adjust horizontal spacing */
+    height: 70px;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* This is the secret: center the links within the remaining space */
+    flex-grow: 1; 
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 20px;            /* Spacing between buttons */
+}
+
+/* Optional: Keep the logo from being squeezed */
+.logo {
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+section {
+    width: 100%;       /* Fills the screen width */
+    min-height: 100vh; /* Fills the screen height */
+    display: flex;     /* Helps align content inside */
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Home_page {
+    background-color: black;
+}
+
+#About_me {
+    background-color: rgb(255, 0, 0);
+}
+
+#Skills {
+    background-color: black;
+}
+
+#Projects {
+    background-color: gray;
+}
+
+#Contacts {
+    background-color: black;
+}
